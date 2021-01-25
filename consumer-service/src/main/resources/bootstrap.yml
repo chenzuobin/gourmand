@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: consumer-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 39.98.118.7:8848
+        namespace: 7d99b067-bc25-4c31-8b7e-e09d0fc1db03
+      config:
+        server-addr: 39.98.118.7:8848
+        file-extension: yml
+        namespace: 7d99b067-bc25-4c31-8b7e-e09d0fc1db03
+
+server:
+  port: 8081
+  servlet:
+    context-path: /consumer
