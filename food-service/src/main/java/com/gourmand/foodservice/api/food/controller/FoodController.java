@@ -11,6 +11,6 @@ public class FoodController {
 
     @GetMapping(value = "/test")
     public String test(@RequestParam(value = "name") String name){
-        return "hello   " + name;
+        return "hello name=" + name;
     }
 }
